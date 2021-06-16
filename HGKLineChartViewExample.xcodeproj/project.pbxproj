@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B3F48E2265DF685002497D8 /* HGKLineChartScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F48E1265DF685002497D8 /* HGKLineChartScrollView.swift */; };
+		8B3F48E4265E1FAD002497D8 /* HGKLineChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F48E3265E1FAD002497D8 /* HGKLineChartModel.swift */; };
+		8B3F48EB265E2F3E002497D8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B3F48E8265E2426002497D8 /* data.json */; };
+		8B3F48EE265E32BB002497D8 /* HttpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F48ED265E32BB002497D8 /* HttpModel.swift */; };
+		8B3F48F2265FAA23002497D8 /* HGKLineChartStyleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F48F1265FAA23002497D8 /* HGKLineChartStyleSet.swift */; };
+		8B3FF0072670B34500B413F8 /* HGKLineChartDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FF0062670B34500B413F8 /* HGKLineChartDefine.swift */; };
 		8B57CAF7265B59020040FDA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57CAF6265B59020040FDA7 /* AppDelegate.swift */; };
-		8B57CAF9265B59020040FDA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57CAF8265B59020040FDA7 /* SceneDelegate.swift */; };
 		8B57CAFB265B59020040FDA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57CAFA265B59020040FDA7 /* ViewController.swift */; };
 		8B57CAFE265B59020040FDA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B57CAFC265B59020040FDA7 /* Main.storyboard */; };
 		8B57CB00265B59030040FDA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B57CAFF265B59030040FDA7 /* Assets.xcassets */; };
 		8B57CB03265B59030040FDA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B57CB01265B59030040FDA7 /* LaunchScreen.storyboard */; };
+		8B57CB0C265B83F90040FDA7 /* HGKLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57CB0B265B83F90040FDA7 /* HGKLineChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B3F48E1265DF685002497D8 /* HGKLineChartScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGKLineChartScrollView.swift; sourceTree = "<group>"; };
+		8B3F48E3265E1FAD002497D8 /* HGKLineChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGKLineChartModel.swift; sourceTree = "<group>"; };
+		8B3F48E8265E2426002497D8 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		8B3F48ED265E32BB002497D8 /* HttpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpModel.swift; sourceTree = "<group>"; };
+		8B3F48F1265FAA23002497D8 /* HGKLineChartStyleSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGKLineChartStyleSet.swift; sourceTree = "<group>"; };
+		8B3FF0062670B34500B413F8 /* HGKLineChartDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGKLineChartDefine.swift; sourceTree = "<group>"; };
 		8B57CAF3265B59020040FDA7 /* HGKLineChartViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGKLineChartViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B57CAF6265B59020040FDA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B57CAF8265B59020040FDA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B57CAFA265B59020040FDA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B57CAFD265B59020040FDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B57CAFF265B59030040FDA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B57CB02265B59030040FDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B57CB04265B59030040FDA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B57CB0B265B83F90040FDA7 /* HGKLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGKLineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B3F48E5265E2386002497D8 /* HGData */ = {
+			isa = PBXGroup;
+			children = (
+				8B3F48E8265E2426002497D8 /* data.json */,
+			);
+			path = HGData;
+			sourceTree = "<group>";
+		};
+		8B3F48EC265E31DF002497D8 /* HGNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				8B3F48ED265E32BB002497D8 /* HttpModel.swift */,
+			);
+			path = HGNetwork;
+			sourceTree = "<group>";
+		};
 		8B57CAEA265B59020040FDA7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +84,10 @@
 		8B57CAF5265B59020040FDA7 /* HGKLineChartViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				8B3F48EC265E31DF002497D8 /* HGNetwork */,
+				8B3F48E5265E2386002497D8 /* HGData */,
+				8B57CB0A265B83D40040FDA7 /* HGKLineChartView */,
 				8B57CAF6265B59020040FDA7 /* AppDelegate.swift */,
-				8B57CAF8265B59020040FDA7 /* SceneDelegate.swift */,
 				8B57CAFA265B59020040FDA7 /* ViewController.swift */,
 				8B57CAFC265B59020040FDA7 /* Main.storyboard */,
 				8B57CAFF265B59030040FDA7 /* Assets.xcassets */,
@@ -65,6 +95,18 @@
 				8B57CB04265B59030040FDA7 /* Info.plist */,
 			);
 			path = HGKLineChartViewExample;
+			sourceTree = "<group>";
+		};
+		8B57CB0A265B83D40040FDA7 /* HGKLineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				8B57CB0B265B83F90040FDA7 /* HGKLineChartView.swift */,
+				8B3F48E1265DF685002497D8 /* HGKLineChartScrollView.swift */,
+				8B3F48E3265E1FAD002497D8 /* HGKLineChartModel.swift */,
+				8B3F48F1265FAA23002497D8 /* HGKLineChartStyleSet.swift */,
+				8B3FF0062670B34500B413F8 /* HGKLineChartDefine.swift */,
+			);
+			path = HGKLineChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3F48EB265E2F3E002497D8 /* data.json in Resources */,
 				8B57CB03265B59030040FDA7 /* LaunchScreen.storyboard in Resources */,
 				8B57CB00265B59030040FDA7 /* Assets.xcassets in Resources */,
 				8B57CAFE265B59020040FDA7 /* Main.storyboard in Resources */,
@@ -137,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3F48F2265FAA23002497D8 /* HGKLineChartStyleSet.swift in Sources */,
 				8B57CAFB265B59020040FDA7 /* ViewController.swift in Sources */,
+				8B3FF0072670B34500B413F8 /* HGKLineChartDefine.swift in Sources */,
+				8B3F48E2265DF685002497D8 /* HGKLineChartScrollView.swift in Sources */,
+				8B57CB0C265B83F90040FDA7 /* HGKLineChartView.swift in Sources */,
+				8B3F48EE265E32BB002497D8 /* HttpModel.swift in Sources */,
 				8B57CAF7265B59020040FDA7 /* AppDelegate.swift in Sources */,
-				8B57CAF9265B59020040FDA7 /* SceneDelegate.swift in Sources */,
+				8B3F48E4265E1FAD002497D8 /* HGKLineChartModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HGKLineChartViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HGKLineChartViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
