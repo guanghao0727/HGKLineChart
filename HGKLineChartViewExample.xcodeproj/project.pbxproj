@@ -49,20 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B3F48E5265E2386002497D8 /* HGData */ = {
+		8B3F48E5265E2386002497D8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				8B3F48E8265E2426002497D8 /* data.json */,
 			);
-			path = HGData;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		8B3F48EC265E31DF002497D8 /* HGNetwork */ = {
+		8B3F48EC265E31DF002497D8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				8B3F48ED265E32BB002497D8 /* HttpModel.swift */,
 			);
-			path = HGNetwork;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		8B57CAEA265B59020040FDA7 = {
@@ -84,9 +84,9 @@
 		8B57CAF5265B59020040FDA7 /* HGKLineChartViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				8B3F48EC265E31DF002497D8 /* HGNetwork */,
-				8B3F48E5265E2386002497D8 /* HGData */,
-				8B57CB0A265B83D40040FDA7 /* HGKLineChartView */,
+				8B3F48EC265E31DF002497D8 /* Network */,
+				8B3F48E5265E2386002497D8 /* Data */,
+				8B57CB0A265B83D40040FDA7 /* HGKLineChart */,
 				8B57CAF6265B59020040FDA7 /* AppDelegate.swift */,
 				8B57CAFA265B59020040FDA7 /* ViewController.swift */,
 				8B57CAFC265B59020040FDA7 /* Main.storyboard */,
@@ -97,7 +97,7 @@
 			path = HGKLineChartViewExample;
 			sourceTree = "<group>";
 		};
-		8B57CB0A265B83D40040FDA7 /* HGKLineChartView */ = {
+		8B57CB0A265B83D40040FDA7 /* HGKLineChart */ = {
 			isa = PBXGroup;
 			children = (
 				8B57CB0B265B83F90040FDA7 /* HGKLineChartView.swift */,
@@ -106,7 +106,7 @@
 				8B3F48F1265FAA23002497D8 /* HGKLineChartStyleSet.swift */,
 				8B3FF0062670B34500B413F8 /* HGKLineChartDefine.swift */,
 			);
-			path = HGKLineChartView;
+			path = HGKLineChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

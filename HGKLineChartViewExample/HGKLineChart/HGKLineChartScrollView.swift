@@ -127,7 +127,7 @@ class HGKLineChartScrollView: UIScrollView {
                 }
                 
                 // 日期文字
-                if (i + 1) % styleSet.timeBetweenNumber == 0 {
+                if ((styleSet.candleWidth < 8 && (i + 1) % 10 == 0) || (styleSet.candleWidth >= 8 && styleSet.candleWidth < 16 && (i + 1) % 5 == 0) || (styleSet.candleWidth >= 16 && styleSet.candleWidth < 24 && (i + 1) % 3 == 0) || (styleSet.candleWidth >= 24 && (i + 1) % 2 == 0)) {
                     if styleSet.timeLineWidth != 0 {
                         drawDashLine(context: context, startPoint: CGPoint(x: centerX, y: styleSet.mainInset.top), stopPoint: CGPoint(x: centerX, y: mainHeight - styleSet.mainInset.bottom), width: styleSet.timeLineWidth, lengths: styleSet.timeLineDashLengths, color: styleSet.timeLineColor)
                     }
@@ -139,12 +139,10 @@ class HGKLineChartScrollView: UIScrollView {
                 var candleColor = styleSet.candleRiseColor
                 if openY > closeY {
                     // 上涨
-                    drawLine(context: context, startPoint: CGPoint(x: centerX, y: highY), stopPoint: CGPoint(x: centerX, y: lowY), width: styleSet.candleLineWidth, color: candleColor)
                     drawLine(context: context, startPoint: CGPoint(x: centerX, y: closeY), stopPoint: CGPoint(x: centerX, y: openY), width: styleSet.candleWidth, color: candleColor)
                 } else if openY < closeY {
                     // 下跌
                     candleColor = styleSet.candleFallColor
-                    drawLine(context: context, startPoint: CGPoint(x: centerX, y: highY), stopPoint: CGPoint(x: centerX, y: lowY), width: styleSet.candleLineWidth, color: candleColor)
                     drawLine(context: context, startPoint: CGPoint(x: centerX, y: openY), stopPoint: CGPoint(x: centerX, y: closeY), width: styleSet.candleWidth, color: candleColor)
                 } else {
                     if i > 1 {
@@ -153,9 +151,9 @@ class HGKLineChartScrollView: UIScrollView {
                             candleColor = styleSet.candleFallColor
                         }
                     }
-                    drawLine(context: context, startPoint: CGPoint(x: centerX, y: highY), stopPoint: CGPoint(x: centerX, y: lowY), width: styleSet.candleLineWidth, color: candleColor)
-                    drawLine(context: context, startPoint: CGPoint(x: centerX, y: openY), stopPoint: CGPoint(x: centerX, y: openY + 1), width: styleSet.candleWidth, color: candleColor)
+                    drawLine(context: context, startPoint: CGPoint(x: centerX, y: openY - 0.5), stopPoint: CGPoint(x: centerX, y: openY), width: styleSet.candleWidth, color: candleColor)
                 }
+                drawLine(context: context, startPoint: CGPoint(x: centerX, y: highY), stopPoint: CGPoint(x: centerX, y: lowY), width: styleSet.candleLineWidth, color: candleColor)
                 
                 // 主图指标线
                 if styleSet.mainIndexType == .ma, i > 0 {
@@ -319,8 +317,6 @@ class HGKLineChartScrollView: UIScrollView {
     
     func drawView() {
         setContentSize()
-        setMaxAndMinValue()
-        setCoordsScale()
         setNeedsDisplay()
     }
     

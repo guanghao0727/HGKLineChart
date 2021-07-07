@@ -284,7 +284,7 @@ class HGKLineChartView: UIView {
                 selectHorizontalLeftConstraint.constant = styleSet.priceLocation == .left ? scrollView.contentInset.left : 0
                 selectHorizontalRightConstraint.constant = styleSet.priceLocation == .left ? 0 : -scrollView.contentInset.right
                 selectVerticalWidthConstraint.constant = styleSet.selectCandleLineWidth
-                selectPriceWidthConstraint.constant = styleSet.priceLocation == .left ? scrollView.priceTextWidth : scrollView.contentInset.right
+                selectPriceWidthConstraint.constant = scrollView.priceTextWidth
                 selectPriceLeftConstraint.isActive = styleSet.priceLocation == .left
                 selectPriceRightConstraint.isActive = styleSet.priceLocation == .right
                 selectTimeTopConstraint.isActive = styleSet.selectCandleTimeLocation == .top
@@ -312,9 +312,9 @@ class HGKLineChartView: UIView {
             selectCandlePoint.y = styleSet.mainInset.top
         } else {
             if styleSet.isShowSecondaryView {
-                if point.y > mainViewH - styleSet.mainInset.bottom, point.y <= mainViewH - (styleSet.mainInset.bottom + styleSet.secondaryInset.bottom) / 2 {
+                if point.y > mainViewH - styleSet.mainInset.bottom, point.y <= mainViewH - styleSet.mainInset.bottom + (styleSet.mainInset.bottom + styleSet.secondaryInset.top) / 2 {
                     selectCandlePoint.y = mainViewH - styleSet.mainInset.bottom
-                } else if point.y > mainViewH - (styleSet.mainInset.bottom + styleSet.secondaryInset.bottom) / 2, point.y < mainViewH + styleSet.secondaryInset.top {
+                } else if point.y > mainViewH - styleSet.mainInset.bottom + (styleSet.mainInset.bottom + styleSet.secondaryInset.top) / 2, point.y < mainViewH + styleSet.secondaryInset.top {
                     selectCandlePoint.y = mainViewH + styleSet.secondaryInset.top
                 } else if point.y > frame.height - styleSet.secondaryInset.bottom {
                     selectCandlePoint.y = frame.height - styleSet.secondaryInset.bottom

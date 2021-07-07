@@ -38,7 +38,6 @@ class HGKLineChartStyleSet: NSObject {
     var candleFallColor = UIColor.green  //下跌颜色
     
     // 时间
-    var timeBetweenNumber: Int = 10  //时间间隔个数
     var timeLineColor = UIColor.init(red: 151 / 255.0, green: 151 / 255.0, blue: 151 / 255.0, alpha: 0.2)  //时间竖线颜色
     var timeLineWidth: CGFloat = 0.5  //时间竖线宽度
     var timeLineDashLengths: [CGFloat] = [3, 1]  //设置时间虚线

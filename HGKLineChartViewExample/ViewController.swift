@@ -163,10 +163,12 @@ class ViewController: UIViewController, HGKLineChartViewDelegate {
                     self.KLineChartView.endRefreshing()
                     let data = try Data(contentsOf: jsonUrl)
                     let jsonData = try JSONDecoder().decode(HttpModel.self, from: data)
-                    if type == .reload {
-                        self.KLineChartView.datas = (jsonData.data?.records)!
-                    } else {
-                        self.KLineChartView.datas.append(contentsOf: (jsonData.data?.records)!)
+                    if jsonData.isSuccess == 1 {
+                        if type == .reload {
+                            self.KLineChartView.datas = (jsonData.data?.records)!
+                        } else {
+                            self.KLineChartView.datas.append(contentsOf: (jsonData.data?.records)!)
+                        }
                     }
                 } catch let error as Error? {
                     self.KLineChartView.endRefreshing()
